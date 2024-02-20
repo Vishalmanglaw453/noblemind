@@ -1,0 +1,107 @@
+:root {
+    --fs-sm: 14px;
+    --fs-md: 12px;
+    --fs-lg: 18px;
+    --fs-xl: 24px;
+    --fs-2xl: 30px;
+    --fs-3xl: 60px;
+    --fs-4xl: 31px;
+}
+
+.ff_jakarta {
+    font-family: 'Plus Jakarta Display', sans-serif;
+}
+
+.text_14 {
+    font-size: var(--fs-sm);
+}
+
+.text_16 {
+    font-size: var(--fs-md);
+}
+
+.text_18 {
+    font-size: var(--fs-lg);
+}
+
+.text_24 {
+    font-size: var(--fs-xl);
+}
+
+.text_48 {
+    font-size: var(--fs-2xl);
+}
+
+.text_60 {
+    font-size: var(--fs-3xl);
+}
+
+.text_64 {
+    font-size: var(--fs-4xl);
+}
+
+.op_8 {
+    opacity: 0.8;
+}
+
+.op_9 {
+    opacity: 0.9;
+}
+
+.op_7 {
+    opacity: 0.7;
+}
+
+.lh_24 {
+    line-height: 24px;
+}
+
+.lh_70 {
+    line-height: 50.4px;
+}
+
+.lh_66 {
+    line-height: 66px;
+}
+
+.lh_26 {
+    line-height: 26.1px;
+}
+
+.lh_52 {
+    line-height: 52.8px;
+}
+
+.lh_62 {
+    line-height: 62.4px;
+}
+
+.lh_33 {
+    line-height: 33.6px;
+}
+
+.lh_21 {
+    line-height: 21.7px;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+.fw_700 {
+    font-weight: 700;
+}
+@media (min-width:576px) {
+    :root {
+        --fs-sm: 14px;
+        --fs-md: 16px;
+        --fs-lg: 18px;
+        --fs-xl: 24px;
+        --fs-2xl: 48px;
+        --fs-3xl: 60px;
+        --fs-4xl: 64px;
+    } 
+    .lh_70 {
+        line-height: 70.4px;
+    }
+}
