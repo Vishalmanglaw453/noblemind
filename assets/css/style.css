@@ -9,8 +9,12 @@
     text-decoration: none !important;
 }
 
-.container {
-    max-width: 1140px !important;
+.container2 {
+    max-width: 1140px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .gap_32 {
@@ -23,25 +27,22 @@
     border-radius: 61px;
     background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
     color: white;
-    border: 1px solid #A854E9;
-    transition: all linear 300ms;
-}
-
-.common_btn:hover {
-    background: white;
-    color: #9A5EEC;
+    border: 1px solid #9A5EEC;
+transition: all linear 300ms;
 }
 
 .start_btn {
     padding: 16px 42px 16px 42px;
     border-radius: 61px;
     background: white;
-    border: 1px solid white;
     color: #9A5EEC;
+    border: 1px solid white;
     transition: all linear 300ms;
-
 }
-
+.common_btn:hover{
+    background: white;
+    color: #9A5EEC;
+}
 .start_btn:hover {
     background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
     color: white;
@@ -55,30 +56,25 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -18%;
     width: 0;
-    height: 2px;
+    height: 1px;
     background-color: blue;
     transition: all linear 300ms;
     background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
-    */
 }
 
 .under_line:hover::before {
     width: 100%;
 }
 
-.text_grident {
-    background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    font: {
-        size: 20vw;
-        family: $font;
-    }
+.nav_text {
+    opacity: 0.7;
 }
 
+.nav_text:hover {
+    opacity: unset;
+}
 
 .hero_heading {
     max-width: 948px;
@@ -124,20 +120,6 @@
     left: 41%;
 }
 
-@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    50% {
-        transform: rotate(300deg);
-    }
-
-    100% {
-        transform: rotate(600deg);
-    }
-}
-
 .our_mission_pera {
     max-width: unset;
 }
@@ -153,9 +135,6 @@
     border-radius: 50%;
     background: #FDFCFC;
     box-shadow: 0px 0px 17.6900577545166px 0px #00000029;
-    animation-name: rotate;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
 }
 
 /* our vision */
@@ -168,12 +147,22 @@
 }
 
 .Vision_box {
+    padding: 12px;
+    position: relative;
+    max-width: 462px;
+}
+.Vision_box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
     max-width: 462px;
     width: 100%;
-    border-radius:
-        16px;
-    border: 0.5px solid blue;
-    padding: 12px;
+    border-radius: 16px;
+    padding: 0.5px 0.5px;
+    border: 1px solid transparent;
+    background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: exclude;
 }
 
 .choose_box {
@@ -228,7 +217,7 @@
 .Services_card {
     max-width: 413px;
     width: 100%;
-    max-height: 270px;
+    height: 100%;
     padding: 20px 20px 44px 20px;
     border-radius: 16px;
     height: 100%;
@@ -525,6 +514,9 @@ ul {
     padding-top: 24px;
 }
 
+.pt-24 {
+    padding-top: 24px;
+}
 
 .pt_52 {
     padding-top: 25px;
@@ -581,6 +573,9 @@ ul {
         padding-top: 91px;
     }
 
+    .pt-24 {
+        padding-top: unset;
+    }
 }
 
 @media (min-width:992px) {

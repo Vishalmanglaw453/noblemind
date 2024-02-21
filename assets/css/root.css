@@ -8,6 +8,12 @@
     --fs-4xl: 31px;
 }
 
+.text_grident {
+    background: linear-gradient(130.88deg, #A854E9 -9.14%, #4F91FC 283.16%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .ff_jakarta {
     font-family: 'Plus Jakarta Display', sans-serif;
 }
@@ -91,6 +97,7 @@
 .fw_700 {
     font-weight: 700;
 }
+
 @media (min-width:576px) {
     :root {
         --fs-sm: 14px;
@@ -100,7 +107,8 @@
         --fs-2xl: 48px;
         --fs-3xl: 60px;
         --fs-4xl: 64px;
-    } 
+    }
+
     .lh_70 {
         line-height: 70.4px;
     }
